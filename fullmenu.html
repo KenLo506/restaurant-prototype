@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="menustyles.css" type="text/css"/>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital@1&family=Playfair+Display&family=Poppins:ital,wght@1,100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="back-button">
+  <a href="/" class="btn btn-primary btn-lg" style="background-color: rgb(2, 155, 64); text-decoration: none;">
+    <span style="font-family: 'Poppins', sans-serif; font-weight: bold; font-size: 50px;">Back</span>
+  </a>
+</div>
+
+
+<div class="back-button">
+  <a href="/" class="btn btn-primary btn-lg" style="background-color: rgb(2, 155, 64); text-decoration: none;">
+    <span style="font-family: 'Poppins', sans-serif; font-weight: bold; font-size: 50px;">Back</span>
+  </a>
+</div>
+
+<div class="opaque-section">
+  <div class="full-menu-container">
+    <div class="menu">
+      <h2>Menu</h2>
+      <table>
+        <tr>
+          <th>Item Name</th>
+          <th>Price</th>
+        </tr>
+        <tr th:each="menu : ${menus}">
+          <td th:text="${menu.itemName}"></td>
+          <td th:text="${menu.price}"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

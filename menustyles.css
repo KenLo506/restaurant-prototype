@@ -1,0 +1,33 @@
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 300px;
+    background-image: url('images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 9999; /* To ensure it's on top of other content */
+    border-radius: 10px; /* Increase border-radius for rounder corners */
+}
+
+/* Style the button text color and hover effect */
+.back-button .btn {
+    color: white;
+    border: none;
+}
+
+.back-button .btn:hover {
+    background-color: rgb(0, 128, 0); /* Change color on hover */
+}
+
+.opaque-section {
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity and color as needed */
+    height: 100vh; /* Adjust the height as needed */
+}

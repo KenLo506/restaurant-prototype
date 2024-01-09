@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="contactus.css" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital@1&family=Playfair+Display&family=Poppins:ital,wght@1,100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="back-button">
+  <a href="/" class="btn btn-primary btn-lg" style="background-color: rgb(2, 155, 64); text-decoration: none;">
+    <span style="font-family: 'Poppins', sans-serif; font-weight: bold; font-size: 50px;">Back</span>
+  </a>
+</div>
+
+<div class="contact-container">
+  <div class="contact-form">
+    <h2>Contact Us</h2>
+    <div class="description">
+      <p> Have a question or comment you’d like to share? We would love to hear from you!
+        You can also reach out to us via email at <a href="mailto:pulaupinangelmhurst@gmail.com">pulaupinangelmhurst@gmail.com</a></p>
+    </div>
+
+    <form action="mailto:pulaupinangelmhurst@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
